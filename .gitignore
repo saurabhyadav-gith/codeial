@@ -1,0 +1,2 @@
+# to ignore node_modules because it is heavy
+node_modules/
