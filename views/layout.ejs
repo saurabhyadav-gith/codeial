@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="/css/layout.css">
+        <%- style %>
+    </head>
+    <body>
+    
+        <!-- using partial -->
+    <%- include('_header'); %> <!-- including header -->
+
+        <!-- <h1>This is codeial/ <%= title%></h1> variable part that is removed -->
+
+        <%-body %> <!--this includes the variable part of the layout-->
+        <!-- body gets filled with what is in user profile and home -->
+
+        <%- include('_footer'); %>  <!-- including footer -->
+    <!-- partial end -->
+    
+    <%- script %>
+    </body>
+</html>
